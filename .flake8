@@ -1,0 +1,6 @@
+[flake8]
+max-line-length = 88
+extend-ignore = E203, W503, E501, E731
+exclude = .venv,build,dist,site,site-packages
+per-file-ignores =
+	app/streamlit_app.py:F401 

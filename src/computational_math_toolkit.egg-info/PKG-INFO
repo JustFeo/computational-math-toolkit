@@ -1,3 +1,18 @@
+Metadata-Version: 2.4
+Name: computational-math-toolkit
+Version: 0.1.0
+Summary: Computational Math Toolkit (CMT): a small, well-tested Python library of core numerical algorithms.
+Author: JustFeo
+License: MIT
+Project-URL: Homepage, https://github.com/JustFeo/computational-math-toolkit
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.23
+Requires-Dist: scipy>=1.10
+Requires-Dist: matplotlib>=3.7
+Dynamic: license-file
+
 # Computational Math Toolkit (CMT)
 
 A small, well-tested Python library of core numerical algorithms for applied mathematics (ODE/PDE solvers, linear-algebra helpers, numerical analysis tools) with Jupyter demo notebooks and an interactive Streamlit demo. Packagable to PyPI, documented with MkDocs, and CI/CD via GitHub Actions. MIT license.

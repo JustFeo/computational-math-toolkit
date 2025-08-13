@@ -1,26 +1,37 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "computational-math-toolkit"
 version = "0.1.0"
-description = "A Python library of core numerical algorithms for applied mathematics."
-authors = [
-    { name = "JustFeo", email = "" }
-]
-license = { file = "LICENSE" }
+description = "Computational Math Toolkit (CMT): a small, well-tested Python library of core numerical algorithms."
 readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "JustFeo"}]
 requires-python = ">=3.10"
 dependencies = [
-    "numpy",
-    "scipy",
-    "matplotlib",
-    "pandas",
-    "pytest",
-    "mkdocs-material",
-    "streamlit"
+    "numpy>=1.23",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
 ]
+
+[project.urls]
+Homepage = "https://github.com/JustFeo/computational-math-toolkit"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203, W503"

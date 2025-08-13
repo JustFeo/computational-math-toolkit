@@ -1,0 +1,19 @@
+site_name: Computational Math Toolkit
+site_url: https://justfeo.github.io/computational-math-toolkit/
+repo_url: https://github.com/JustFeo/computational-math-toolkit
+repo_name: JustFeo/computational-math-toolkit
+nav:
+  - Home: index.md
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: blue
+      accent: indigo
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+plugins:
+  - search 
