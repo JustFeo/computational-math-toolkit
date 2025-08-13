@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+pandas
+pytest
+mkdocs-material
+streamlit
+flake8
+black
+isort
